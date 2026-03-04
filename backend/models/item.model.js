@@ -10,7 +10,6 @@ const itemSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    // item kis shop ka hai ye reference hoga
     shop: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Shop",
