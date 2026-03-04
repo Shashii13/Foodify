@@ -43,15 +43,15 @@ function SignIn() {
     }
   };
   const handleGoogleAuth = async () => {
-    const provider = new GoogleAuthProvider(); // ye google se authentication ke liye hai
-    const result = await signInWithPopup(auth, provider); // ye popup me google ka sign in page khol dega 
+    const provider = new GoogleAuthProvider(); 
+    const result = await signInWithPopup(auth, provider); 
     try {
       const { data } = await axios.post(
         `${serverUrl}/api/auth/google-auth`,
         {
           email: result.user.email,
         },
-        { withCredentials: true } // ye credentials bhejne ke liye hai 
+        { withCredentials: true } 
       );
       dispatch(setUserData(data));
     } catch (error) {

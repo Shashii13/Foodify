@@ -25,17 +25,15 @@ function useGetCity() {
         `https://api.geoapify.com/v1/geocode/reverse?lat=${latitude}&lon=${longitude}&format=json&apiKey=${apiKey}`
       );
       console.log(result.data);
-      // current city ko redux me store kar denge
-      // agar city nahi hai to county ko store kar denge
       dispatch(
         setCurrentCity(
           result?.data?.results[0].city || result?.data?.results[0].county
         )
       );
-      // current state ko redux me store kar denge
+     
 
       dispatch(setCurrentState(result?.data?.results[0].state));
-      // current address ko redux me store kar denge
+      
       dispatch(
         setCurrentAddress(
           result?.data?.results[0].address_line2 ||

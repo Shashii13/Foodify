@@ -166,7 +166,7 @@ function SignUp() {
             Password
           </label>
           <div className="relative">
-            {/*  jab showPassword true hoga tab text me convert kar de warna password me yani (*****) isme  */}
+            {}
             <input
               type={`${showPassword ? "text" : "password"}`}
               className="w-full border rounded-lg px-3 py-2 focus:outline-none pr-10"
@@ -177,7 +177,7 @@ function SignUp() {
               required
             />
 
-            {/* jab click kare icon pe  */}
+            {}
             <button
               className="absolute right-3 cursor-pointer top-[14px] text-gray-500"
               onClick={() => setShowPassword((prev) => !prev)}
@@ -186,7 +186,7 @@ function SignUp() {
             </button>
           </div>
         </div>
-        {/* role*/}
+        {}
 
         <div className="mb-4">
           <label
