@@ -15,9 +15,10 @@ import { Server } from "socket.io";
 import { socketHandler } from "./socket.js";
 
 const app = express();
+
 const server = http.createServer(app);
 
-// yaha pe hum socket io ka instance create karenge jo ki http server ke sath jude ga taaki websocket connection ban sake 
+
 const io = new Server(server, {
   cors: {
     origin: "https://foodify-food-delivery-app-1.onrender.com",
