@@ -21,7 +21,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://foodify-food-delivery-app-1.onrender.com",
+     origin: "https://foodify-food-delivery-app.vercel.app/",
     credentials: true,
     methods: ["POST", "GET"],
   },
