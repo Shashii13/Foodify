@@ -42,8 +42,8 @@ const itemSchema = new mongoose.Schema(
       required: true,
     },
     rating: {
-      average: { type: Number, default: 0 }, //unka average rating
-      count: { type: Number, default: 0 }, //kitno logo ne rate kiya
+      average: { type: Number, default: 0 }, 
+      count: { type: Number, default: 0 }, 
     },
   },
   { timestamps: true }
